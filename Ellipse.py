@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # default number of samples (per experiment)
     Nsample = 1
 
-    if '-h' in sys.argv or '--help' in sys.argv or not haveH0:
+    if '-h' in sys.argv or '--help' in sys.argv:
         print ("Usage: %s [options]" % sys.argv[0])
         print ("  options:")
         print ("   --help(-h)          print options")
