@@ -47,13 +47,14 @@ if __name__ == "__main__":
         return G.Gaussian_pdf(x)
     def trap(N):
         h = 2 / float(N)
-        I = 0.5 * h * (f(-1) + f(1))
+        I = 0.5 * h * (f(a) + f(b))
         for i in range(1, int(N)):
-            I += h * f(i * h-1)
+            I += h * f(i * h+a)
         return I
     
     I_T = trap(N)
     x,w = np.polynomial.legendre.leggauss(10)
+    x = (x+1)*(b-a)/2+a
     I_G = np.dot(f(x),w)
     
     
