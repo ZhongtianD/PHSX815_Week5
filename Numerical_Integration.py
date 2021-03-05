@@ -31,15 +31,15 @@ if __name__ == "__main__":
             
     if '-a' in sys.argv:
         p = sys.argv.index('-a')
-        as = int(sys.argv[p+1])
-        if as > -100:
-            a = as
+        a0 = int(sys.argv[p+1])
+        if a0 > -100:
+            a = a0
     
     if '-b' in sys.argv:
         p = sys.argv.index('-b')
-        bs = int(sys.argv[p+1])
-        if bs > a:
-            b = bs
+        b0 = int(sys.argv[p+1])
+        if b0 > a:
+            b = b0
             
     I_0 = (erf(b*np.sqrt(2)/2)-erf(a*np.sqrt(2)/2))/2
     G = Gaussian()
