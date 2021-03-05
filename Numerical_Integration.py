@@ -24,7 +24,7 @@ if __name__ == "__main__":
         if Ns > 1:
             N = N
             
-    I_0 = 0.682689492137
+    I_0 = 0.6826894921370859
     G = Gaussian()
     def f(x):
         return G.Gaussian_pdf(x)
