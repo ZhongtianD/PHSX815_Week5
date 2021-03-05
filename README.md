@@ -11,7 +11,7 @@ rejection sampling on an ellipse with 2 Gaussians. Can be used to calculate conf
 
 Homework 6
 
-Numerical_Integration.py computes the numerical integration of a normal distribution between -1 σ to +1 σ.
+Numerical_Integration.py computes the numerical integration of a normal distribution between -1 σ to +1 σ. (or a σ to b σ)
 
 At 10 evaluation of the function, Trapezoidal integration error is 0.0016.
 
