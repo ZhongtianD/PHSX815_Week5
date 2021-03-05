@@ -58,8 +58,9 @@ if __name__ == "__main__":
     
     
     print('With '+str(N)+' evaluation of the function' )
-    print('Gauss–Legendre quadrature method value is'+str(I_G) )
-    print('Trapezoidal integration value is'+str(I_T) )
+    print('True value of the integral is '+str(I_0) )
+    print('Gauss–Legendre quadrature method value is '+str(I_G) )
+    print('Trapezoidal integration value is '+str(I_T) )
     print('Gauss–Legendre quadrature method - trapezoidal integration =  '+str(I_G-I_T))
     print('Gauss–Legendre quadrature method error =  '+str(I_0 - I_G))
     print('Trapezoidal integration error =  '+str(I_0 - I_T))
