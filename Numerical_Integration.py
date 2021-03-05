@@ -53,7 +53,7 @@ if __name__ == "__main__":
         return I
     
     I_T = trap(N)
-    x,w = np.polynomial.legendre.leggauss(10)
+    x,w = np.polynomial.legendre.leggauss(N)
     x = (x+1)*(b-a)/2+a
     w *= (b-a)/2
     I_G = np.dot(f(x),w)
